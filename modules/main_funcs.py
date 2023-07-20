@@ -19,5 +19,10 @@ def copy_obj():
     shutil.copytree(folder_to_copy, new_folder_name)
 
 
+def view_files_in_current_dir():
+    path = os.getcwd()
+    os.listdir(path)
+
+
 if __name__ == "__main__":
     print("This is main_funcs.py")
